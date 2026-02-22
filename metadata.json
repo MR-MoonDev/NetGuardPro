@@ -1,0 +1,5 @@
+{
+  "name": "NetGuard Pro",
+  "description": "A modern virtual network service blocker dashboard for monitoring and managing network rules, devices, and security logs.",
+  "requestFramePermissions": []
+}

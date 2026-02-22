@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  :root {
+    --background: #0a0a0c;
+    --foreground: #e1e1e6;
+    --card: #121216;
+    --card-foreground: #e1e1e6;
+    --popover: #121216;
+    --popover-foreground: #e1e1e6;
+    --primary: #00f2ff;
+    --primary-foreground: #0a0a0c;
+    --secondary: #1a1a24;
+    --secondary-foreground: #e1e1e6;
+    --muted: #1a1a24;
+    --muted-foreground: #a1a1aa;
+    --accent: #00f2ff;
+    --accent-foreground: #0a0a0c;
+    --destructive: #ff4444;
+    --destructive-foreground: #e1e1e6;
+    --border: #1f1f23;
+    --input: #1f1f23;
+    --ring: #00f2ff;
+    --radius: 0.75rem;
+  }
+
+  :root.light {
+    --background: #f8f9fa;
+    --foreground: #1a1a24;
+    --card: #ffffff;
+    --card-foreground: #1a1a24;
+    --popover: #ffffff;
+    --popover-foreground: #1a1a24;
+    --primary: #00b4d8;
+    --primary-foreground: #ffffff;
+    --secondary: #e9ecef;
+    --secondary-foreground: #1a1a24;
+    --muted: #f1f3f5;
+    --muted-foreground: #6c757d;
+    --accent: #00b4d8;
+    --accent-foreground: #ffffff;
+    --destructive: #fa5252;
+    --destructive-foreground: #ffffff;
+    --border: #dee2e6;
+    --input: #dee2e6;
+    --ring: #00b4d8;
+  }
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+.neon-glow {
+  box-shadow: 0 0 10px rgba(0, 242, 255, 0.2);
+}
+
+.neon-border {
+  border: 1px solid rgba(0, 242, 255, 0.3);
+}
+
+.glass-card {
+  background: rgba(18, 18, 22, 0.8);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1f1f23;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2f2f35;
+}
