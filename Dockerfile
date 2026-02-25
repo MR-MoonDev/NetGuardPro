@@ -13,8 +13,9 @@ RUN yarn install
 # 5. Baqi saara code copy karein
 COPY . .
 
-# 6. Port expose  3000
-EXPOSE 5173
+# 6. # Purani line: EXPOSE 5173
+# Nayi line:
+EXPOSE 3000
 
 # 7. Dev mode mein chalane ki command
 CMD ["yarn", "dev"]
